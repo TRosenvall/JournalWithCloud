@@ -37,7 +37,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="BsW-W5-0MX">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="WzQ-0E-86f">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="WzQ-0E-86f">
                             <connections>
                                 <segue destination="cAS-oa-5XB" kind="show" id="fV1-pi-zHQ"/>
                             </connections>

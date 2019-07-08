@@ -11,12 +11,12 @@ import CloudKit
 
 class Entry {
     
-    let title: String
-    let body: String
-    let timestamp: Date
+    var title: String
+    var body: String
+    var timestamp: Date
     let recordID: CKRecord.ID
     
-    init(title: String, body: String, timestamp: Date, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString)) {
+    init(title: String, body: String, timestamp: Date = Date(), recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString)) {
         self.title = title
         self.body = body
         self.timestamp = timestamp
