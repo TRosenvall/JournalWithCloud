@@ -14,31 +14,21 @@ class Entry {
     let title: String
     let body: String
     let timestamp: Date
+    let recordID: CKRecord.ID
     
-    var cloudKitRecord: CKRecord {
-        let record = CKRecord(recordType: EntryConstants.typeKey)
-        
-        record.setValue(title, forKey: EntryConstants.titleKey)
-        record.setValue(body, forKey: EntryConstants.bodyKey)
-        record.setValue(timestamp, forKey: EntryConstants.timestampKey)
-        
-        return record
-    }
-    
-    init(title: String, body: String, timestamp: Date) {
+    init(title: String, body: String, timestamp: Date, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString)) {
         self.title = title
         self.body = body
         self.timestamp = timestamp
+        self.recordID = recordID
     }
     
-    init?(record: CKRecord) {
+    convenience init?(record: CKRecord) {
         guard let title = record[EntryConstants.titleKey] as? String,
             let body = record[EntryConstants.bodyKey] as? String,
             let timestamp = record[EntryConstants.timestampKey] as? Date
             else {return nil}
-        self.title = title
-        self.body = body
-        self.timestamp = timestamp
+        self.init(title: title, body: body, timestamp: timestamp, recordID: record.recordID)
     }
 }
 
