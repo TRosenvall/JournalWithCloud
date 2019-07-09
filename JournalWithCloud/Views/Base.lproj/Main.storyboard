@@ -13,18 +13,34 @@
         <!--Root View Controller-->
         <scene sceneID="E9h-6r-3e2">
             <objects>
-                <tableViewController id="czk-fL-oKL" sceneMemberID="viewController">
+                <tableViewController id="czk-fL-oKL" customClass="EntryListTableViewController" customModule="JournalWithCloud" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ODl-dp-ra1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCell" id="v13-VD-MFp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCell" textLabel="0se-ac-XPl" detailTextLabel="i68-KW-YoK" style="IBUITableViewCellStyleSubtitle" id="v13-VD-MFp">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v13-VD-MFp" id="fgZ-0w-ga3">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0se-ac-XPl">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i68-KW-YoK">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="cAS-oa-5XB" kind="show" identifier="toUpdateView" id="FJR-Ow-w3T"/>
@@ -51,7 +67,7 @@
         <!--Title-->
         <scene sceneID="FVd-cb-oNP">
             <objects>
-                <viewController id="cAS-oa-5XB" sceneMemberID="viewController">
+                <viewController id="cAS-oa-5XB" customClass="EntryDetailViewController" customModule="JournalWithCloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K1F-Yz-NRU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,11 +91,15 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-YO-ctr">
                                         <rect key="frame" x="0.0" y="684" width="374" height="30"/>
                                         <state key="normal" title="Clear Text"/>
+                                        <connections>
+                                            <action selector="clearText:" destination="cAS-oa-5XB" eventType="touchUpInside" id="8Qq-hp-kZx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ODE-Rb-biM" firstAttribute="bottom" secondItem="Ioe-Ut-kJM" secondAttribute="bottom" constant="20" id="3BQ-CM-xFn"/>
                             <constraint firstItem="Ioe-Ut-kJM" firstAttribute="top" secondItem="ODE-Rb-biM" secondAttribute="top" constant="40" id="NG9-um-5zu"/>
@@ -87,12 +107,28 @@
                             <constraint firstItem="ODE-Rb-biM" firstAttribute="trailing" secondItem="Ioe-Ut-kJM" secondAttribute="trailing" constant="20" id="toR-Zx-YY8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ODE-Rb-biM"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="PeR-Mq-r8j" appends="YES" id="vYO-Lx-R2x"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="xTF-W3-eoc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Jpf-ms-gau"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Jpf-ms-gau">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="cAS-oa-5XB" id="pBV-P3-P3J"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextView" destination="DPa-ge-2Vm" id="T0P-bJ-Srn"/>
+                        <outlet property="titleTextField" destination="lea-A4-XaS" id="dIO-pg-jRJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kio-iO-GE2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="PeR-Mq-r8j">
+                    <connections>
+                        <action selector="resignWhenTapped:" destination="cAS-oa-5XB" id="35v-G2-V3H"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1043" y="284"/>
         </scene>

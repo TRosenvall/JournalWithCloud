@@ -2,4 +2,310 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.105945"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.106024"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.106081"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.106136"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in JournalWithCloud.CloudKitController.fetchRecordFromCloudKit(type: Swift.String, database: __C.CKDatabase, completion: (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JournalWithCloud"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timothyrosenvall/Library/Autosave%20Information/JournalWithCloud/JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+                  timestampString = "584319647.265197"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2020">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in JournalWithCloud.CloudKitController.fetchRecordFromCloudKit(type: Swift.String, database: __C.CKDatabase, completion: (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JournalWithCloud"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timothyrosenvall/Library/Autosave%20Information/JournalWithCloud/JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+                  timestampString = "584319647.2725101"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2056">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.10619"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.10624"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.106292"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JournalWithCloud.CloudKitController.fetchRecordFromCloudKit(type: Swift.String, database: __C.CKDatabase, completion: (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JournalWithCloud"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timothyrosenvall/Library/Autosave%20Information/JournalWithCloud/JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+                  timestampString = "584319647.3078589"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "243">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in JournalWithCloud.CloudKitController.fetchRecordFromCloudKit(type: Swift.String, database: __C.CKDatabase, completion: (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JournalWithCloud"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timothyrosenvall/Library/Autosave%20Information/JournalWithCloud/JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+                  timestampString = "584319647.310948"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "292">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.106344"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.106395"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.106445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+            timestampString = "584319702.1064939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchRecordFromCloudKit(type:database:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in JournalWithCloud.CloudKitController.fetchRecordFromCloudKit(type: Swift.String, database: __C.CKDatabase, completion: (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JournalWithCloud"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timothyrosenvall/Library/Autosave%20Information/JournalWithCloud/JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+                  timestampString = "584319647.357393"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1396">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in JournalWithCloud.CloudKitController.fetchRecordFromCloudKit(type: Swift.String, database: __C.CKDatabase, completion: (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "JournalWithCloud"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timothyrosenvall/Library/Autosave%20Information/JournalWithCloud/JournalWithCloud/Controllers/Helpers+Extensions/CloudKitController.swift"
+                  timestampString = "584319647.364378"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1437">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/ModelControllers/EntryController.swift"
+            timestampString = "584319702.106548"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "fetchEntries(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JournalWithCloud/Controllers/ModelControllers/EntryController.swift"
+            timestampString = "584319702.1068341"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchEntries(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

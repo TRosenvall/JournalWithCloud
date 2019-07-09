@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CloudKit
 
 class EntryController {
     // Singleton
@@ -20,7 +21,8 @@ class EntryController {
     func createEntry (title: String, body: String) {
         let entry = Entry(title: title, body: body)
         let database = CloudKitController.sharedInstance.database
-        CloudKitController.sharedInstance.saveRecordToCloudKit(recordID: entry.recordID, database: database) { (success) in
+        let record = CKRecord(entry: entry)
+        CloudKitController.sharedInstance.saveRecordToCloudKit(record: record, database: database) { (success) in
             if success {
                 print("Entry Created")
             }
@@ -29,14 +31,16 @@ class EntryController {
     }
     
     // Read
-    func fetchEntries () {
+    func fetchEntries ( completion: @escaping (Bool) -> Void) {
         let database = CloudKitController.sharedInstance.database
         CloudKitController.sharedInstance.fetchRecordFromCloudKit(type: EntryConstants.typeKey, database: database) { (records, error) in
             if let error = error {
                 print("Error in \(#function) :  \(error.localizedDescription) /n---/n \(error)")
+                completion(false)
             } else if let records = records {
                 let entries = records.compactMap( {Entry(record: $0)} )
                 self.entries = entries
+                completion(true)
             }
         }
     }

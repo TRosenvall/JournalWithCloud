@@ -18,8 +18,7 @@ class CloudKitController {
     
     // Mark : - CRUD
     // Create
-    func saveRecordToCloudKit(recordID: CKRecord.ID, database: CKDatabase, completion: (Bool) -> Void) {
-        let record = CKRecord(recordType: EntryConstants.typeKey, recordID: recordID)
+    func saveRecordToCloudKit(record: CKRecord, database: CKDatabase, completion: (Bool) -> Void) {
         database.save(record) { (record, error) in
             if let error = error {
                 print("Error in \(#function) :  \(error.localizedDescription) /n---/n \(error)")
@@ -44,16 +43,21 @@ class CloudKitController {
     }
 
     // Update
-    func updateRecordFromCloudKit(recordID: CKRecord.ID, database: CKDatabase, title: String, body: String, completion: @escaping (Bool) -> Void) {
+    func updateRecordFromCloudKit(recordID: CKRecord.ID, database:
+        CKDatabase, title: String, body: String, completion: @escaping (Bool) -> Void) {
+ //       let operation = CKModifyRecordsOperation
+ //       operation
         database.fetch(withRecordID: recordID) { (record, error) in
             if let error = error {
                 print("Error in \(#function) :  \(error.localizedDescription) /n---/n \(error)")
             } else if let record = record {
-                let entryToUpdate = Entry(record: record)
-                entryToUpdate?.title = title
-                entryToUpdate?.body = body
-                entryToUpdate?.timestamp = Date()
-                database.save(record, completionHandler: { (record, error) in
+                guard let entryToUpdate = Entry(record: record) else {return}
+                entryToUpdate.title = title
+                entryToUpdate.body = body
+                entryToUpdate.timestamp = Date()
+                let updatedRecord = CKRecord(entry: entryToUpdate)
+                
+                database.save(updatedRecord, completionHandler: { (record, error) in
                     if let error = error {
                         print("Error in \(#function) :  \(error.localizedDescription) /n---/n \(error)")
                     } else if let record = record {

@@ -32,6 +32,16 @@ class Entry {
     }
 }
 
+extension CKRecord {
+    convenience init(entry: Entry) {
+        self.init(recordType: EntryConstants.typeKey, recordID: entry.recordID)
+        
+        self.setValue(entry.title, forKey: EntryConstants.titleKey)
+        self.setValue(entry.body, forKey: EntryConstants.bodyKey)
+        self.setValue(entry.timestamp, forKey: EntryConstants.timestampKey)
+    }
+}
+
 extension Entry: Equatable {
     static func == (lhs: Entry, rhs: Entry) -> Bool {
         return lhs.title == rhs.title && lhs.body == rhs.body && lhs.timestamp == rhs.timestamp
